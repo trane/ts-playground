@@ -1,0 +1,46 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    // The strict flag enables a wide range of type checking behavior that
+    // results in stronger guarantees of program correctness. Turning this on is
+    // equivalent to enabling all of the strict mode family options, which are
+    // outlined below. You can then turn off individual strict mode family
+    // checks as needed. Future versions of TypeScript may introduce additional
+    // stricter checking under this flag, so upgrades of TypeScript might result
+    // in new type errors in your program. When appropriate and possible, a
+    // corresponding flag will be added to disable that behavior.
+    "strict": true,
+    // By default (with esModuleInterop false or not set) TypeScript treats
+    // CommonJS/AMD/UMD modules similar to ES6 modules.
+    "esModuleInterop": true,
+    // Specify the module resolution strategy: 'node' (Node.js) or 'classic'
+    // (used in TypeScript before the release of 1.6). You probably won’t need
+    // to use classic in modern code.
+    "moduleResolution": "node",
+    // Sets the module system for the program. See the Modules chapter of the
+    // handbook for more information. You very likely want "CommonJS".
+    "module": "commonjs",
+    // TypeScript follows the case sensitivity rules of the file system it’s
+    // running on. This can be problematic if some developers are working in a
+    // case-sensitive file system and others aren’t. If a file attempts to
+    // import fileManager.ts by specifying ./FileManager.ts the file will be
+    // found in a case-insensitive file system, but not on a case-sensitive file
+    // system.
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "types": ["jest", "node"],
+    // Modern browsers support all ES6 features, so ES6 is a good choice. You
+    // might choose to set a lower target if your code is deployed to older
+    // environments, or a higher target if your code is guaranteed to run in
+    // newer environments.
+    // Changing target also changes the default value of lib. You may “mix and
+    // match” target and lib settings as desired, but you could just set target
+    // for convenience.
+    // If you are only working with Node.js, here are recommended targets based
+    // on the Node version:
+    // Node 8 ES2017
+    // Node 10  ES2018
+    // Node 12  ES2019
+    "target": "ES2019"
+  }
+}
